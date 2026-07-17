@@ -1,4 +1,4 @@
-# autoSprint
+# RyzenMods
 
 ## Setup
 
