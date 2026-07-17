@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "ru.ryzenmods.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "example.ExampleMixin",
+    "MinecraftClientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

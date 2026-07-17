@@ -1,0 +1,5 @@
+accessWidener v1 named
+accessible field net/minecraft/item/ItemCooldownManager entries Ljava/util/Map;
+accessible class net/minecraft/item/ItemCooldownManager$Entry
+accessible field net/minecraft/item/ItemCooldownManager tick I
+accessible field net/minecraft/client/MinecraftClient itemUseCooldown I
