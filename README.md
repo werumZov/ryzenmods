@@ -1,4 +1,5 @@
 # RyzenMods
+Current source version: 1.0.1
 
 ## Setup
 
