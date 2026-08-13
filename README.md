@@ -4,7 +4,7 @@ Current source version: 1.0.2
 
 Modrinth: https://modrinth.com/mod/ryzen-mods
 
-All source files in archive in soucrce folder
+All source files in archive in source folder(src.rar)
 
 ## Setup
 
