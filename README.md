@@ -1,5 +1,6 @@
 # RyzenMods
-Current source version: 1.0.1\n
+Current source version: 1.0.1
+
 Modrinth: https://modrinth.com/mod/ryzen-mods
 
 ## Setup
