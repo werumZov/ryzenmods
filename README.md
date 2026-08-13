@@ -4,6 +4,8 @@ Current source version: 1.0.2
 
 Modrinth: https://modrinth.com/mod/ryzen-mods
 
+All source files in archive in soucrce folder
+
 ## Setup
 
 For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
