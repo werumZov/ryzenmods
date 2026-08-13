@@ -7,22 +7,38 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+	mavenLocal()
+	mavenCentral()
+	maven {
+		url "https://maven.shedaniel.me/"
+	}
+	maven {
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
+	}
+	maven { url 'https://jitpack.io' }
 }
+loom {
+	accessWidenerPath = file("src/main/resources/ryzenmods.accesswidener")
+}
+
 
 dependencies {
-	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:1.21.4+build.1:v2"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+	modApi "me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}"
+	modCompileOnly("maven.modrinth:modmenu:13.0.4")
+	implementation "com.github.jagrosh:DiscordIPC:master-SNAPSHOT"
+	include "com.github.jagrosh:DiscordIPC:master-SNAPSHOT"
+	implementation "org.json:json:20240303"
+	include "org.json:json:20240303"
+	implementation 'com.sync:synclib:1.0.8'
+	include 'com.sync:synclib:1.0.8'
 }
+
 
 processResources {
 	def version = project.version
